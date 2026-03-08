@@ -90,6 +90,40 @@ display:block;
 }
 
 }
+.features{
+padding:80px 40px;
+background:#ffffff;
+text-align:center;
+}
+
+.features-title{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.features-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.feature-card{
+background:#f5f5f5;
+padding:30px;
+width:300px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card h3{
+margin-bottom:15px;
+}
 
 </style>
 </head>
@@ -113,6 +147,30 @@ display:block;
 </div>
 
 </nav>
+<section class="features">
+
+<h2 class="features-title">Our Services</h2>
+
+<div class="features-container">
+
+<div class="feature-card">
+<h3>Web Development</h3>
+<p>Zamonaviy va tez ishlaydigan web saytlar yaratamiz.</p>
+</div>
+
+<div class="feature-card">
+<h3>UI / UX Design</h3>
+<p>Qulay va chiroyli foydalanuvchi interfeysi yaratamiz.</p>
+</div>
+
+<div class="feature-card">
+<h3>SEO Optimization</h3>
+<p>Saytingizni qidiruv tizimlarida yuqoriga chiqaramiz.</p>
+</div>
+
+</div>
+
+</section>
 
 <script>
 
