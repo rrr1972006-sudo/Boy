@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AXON</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+nav{
+width:100%;
+background:#111;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:600;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#00bcd4;
+}
+
+/* burger */
+
+.menu-btn{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* mobile */
+
+@media (max-width:768px){
+
+.nav-links{
+position:absolute;
+top:60px;
+left:-100%;
+width:100%;
+background:#111;
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+transition:0.3s;
+}
+
+.nav-links.active{
+left:0;
+}
+
+.nav-links li{
+margin:15px 0;
+}
+
+.menu-btn{
+display:block;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">MySite</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<div class="menu-btn" onclick="toggleMenu()">
+☰
+</div>
+
+</nav>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
